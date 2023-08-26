@@ -1,11 +1,10 @@
 import { MTypography, Typography } from "@/shared/ui/typography";
 import React from "react";
-import { HistoryButton } from "./ui/historyButton";
-
+import { Button } from "@/shared/ui/button";
 import { motion } from "framer-motion";
 import { fadeIn } from "@/shared/animation";
 import { Avatar } from "./ui/avatar";
-import { ParticlesContainer } from "./ui/particles";
+import { ParticlesContainer } from "../../widgets/particles";
 
 export const HomePage = () => {
   return (
@@ -52,7 +51,11 @@ export const HomePage = () => {
             />
           </Typography>
           <div className="flex justify-center tb:hidden relative">
-            <HistoryButton />
+            <Button
+              href="/history"
+              src="/homePage/myHistory.png"
+              alt="history"
+            />
           </div>
 
           <motion.div
@@ -62,7 +65,11 @@ export const HomePage = () => {
             exit="hidden"
             className="hidden tb:flex"
           >
-            <HistoryButton />
+            <Button
+              href="/history"
+              src="/homePage/myHistory.png"
+              alt="history"
+            />
           </motion.div>
         </div>
       </div>

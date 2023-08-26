@@ -6,7 +6,7 @@ export const Avatar = () => {
     <div className="hidden tb:flex tb:max-w-none">
       <Image
         className="translate-z-0 "
-        src="/myImage.png"
+        src="/homePage/myImage.png"
         alt="my-avatar"
         width={300}
         height={647}

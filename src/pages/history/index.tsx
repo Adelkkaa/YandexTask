@@ -1,4 +1,4 @@
-import { Typography } from "@/shared/ui/typography";
+import { MyHistory } from "@/components/MyHistory";
 import { NextPage } from "next";
 import Head from "next/head";
 import React from "react";
@@ -12,6 +12,7 @@ const Home: NextPage = (): JSX.Element => (
       <link rel="shortcut icon" href="/favicon.ico" />
       <base href="/history" />
     </Head>
+    <MyHistory />
   </>
 );
 

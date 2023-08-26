@@ -8,7 +8,7 @@ export const Navbar = () => {
 
   return (
     <nav className="flex flex-col items-center tb:justify-center gap-y-4 fixed h-max bottom-0 mt-auto tb:right-[2%] z-50 top-0 w-full tb:w-16 tb:max-w-md tb:h-screen">
-      <div className="flex w-full tb:flex-col items-center justify-between tb:justify-center gap-y-10 px-4 tb:py-4 mb:max-tb:px-40 dk:px-0 h-[80px] bg-purple-white tb:h-max mb:max-tb:text-titleX text-titleM tb:rounded-full ">
+      <div className="flex w-full tb:flex-col items-center justify-between tb:justify-center mb:justify-around gap-y-10 px-4 tb:py-4 mb:max-tb:px-4 dk:px-0 h-[80px] bg-purple-white tb:h-max mb:max-tb:text-titleX text-titleM tb:rounded-full ">
         {navData.map((link, index) => (
           <Link
             className={`${

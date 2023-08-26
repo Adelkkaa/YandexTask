@@ -11,16 +11,22 @@ export const headerData: HeaderItem[] = [
   {
     name: "vk",
     path: "https://vk.com/adelsharipov",
-    icon: <SlSocialVkontakte />,
+    icon: (
+      <SlSocialVkontakte className="hover:fill-red-white transition-all duration-300 " />
+    ),
   },
   {
     name: "github",
     path: "https://github.com/Adelkkaa",
-    icon: <SlSocialGithub />,
+    icon: (
+      <SlSocialGithub className="hover:fill-red-white transition-all duration-300 " />
+    ),
   },
   {
     name: "telegram",
     path: "https://t.me/adelkkaa",
-    icon: <FaTelegram />,
+    icon: (
+      <FaTelegram className="hover:fill-red-white transition-all duration-300 " />
+    ),
   },
 ];
