@@ -11,7 +11,10 @@ export const HomePage = () => {
     <div className="h-[100vh]">
       <div className="w-full h-full bg-gradient-to-r from-primary/10 via-black/30 to-black/10">
         <div className="text-center gap-[16px] flex flex-col justify-center tb:pt-[3rem] tb:text-left h-full container mx-auto ">
-          <Typography className="relative overflowX-hidden" variant="h3">
+          <Typography
+            className="relative overflowX-hidden mb:max-tb:mt-[-64px]"
+            variant="h3"
+          >
             <MTypography variant="h3" as={"span"}>
               Привет! <br />
               Меня Зовут
@@ -31,7 +34,7 @@ export const HomePage = () => {
             />
           </Typography>
           <Typography
-            className="max-w-sm tb:max-w-[500px] mx-auto tb:mx-0 mb-10 tb:mb-16 relative overflowX-hidden"
+            className="max-w-sm tb:max-w-[500px] mx-auto tb:mx-0 mb:mb-[2px] tb:mb-16 relative overflowX-hidden"
             variant="titleM"
           >
             <MTypography variant="titleM" as={"span"}>
@@ -55,6 +58,8 @@ export const HomePage = () => {
               href="/history"
               src="/homePage/myHistory.png"
               alt="history"
+              linkClassName="mb:max-tb:max-w-[85px] mb:max-tb:max-h-[85px]"
+              imageClassName="mb:max-tb:max-w-[85px] mb:max-tb:max-h-[85px]"
             />
           </div>
 

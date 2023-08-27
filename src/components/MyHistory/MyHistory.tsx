@@ -45,7 +45,13 @@ export const MyHistory = () => {
           exit="hidden"
           className="flex tb:hidden relative z-[9]"
         >
-          <Button href="/dates" src="/history/myDates.png" alt="history" />
+          <Button
+            linkClassName="mb:max-tb:max-w-[85px] mb:max-tb:max-h-[85px]"
+            imageClassName="mb:max-tb:max-w-[85px] mb:max-tb:max-h-[85px]"
+            href="/dates"
+            src="/history/myDates.png"
+            alt="history"
+          />
         </motion.div>
 
         <div className="w-[1200px] h-full select-none absolute right-0 bottom-0 overflowY-hidden">
