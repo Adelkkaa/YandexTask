@@ -1,5 +1,6 @@
 import { SlSocialVkontakte, SlSocialGithub } from "react-icons/sl";
 import { FaTelegram } from "react-icons/fa";
+import { MdOutlineSaveAlt } from "react-icons/md";
 
 type HeaderItem = {
   name: string;
@@ -27,6 +28,13 @@ export const headerData: HeaderItem[] = [
     path: "https://t.me/adelkkaa",
     icon: (
       <FaTelegram className="hover:fill-red-white transition-all duration-300 " />
+    ),
+  },
+  {
+    name: "resume",
+    path: "/resume.pdf",
+    icon: (
+      <MdOutlineSaveAlt className="hover:fill-red-white transition-all duration-300 " />
     ),
   },
 ];

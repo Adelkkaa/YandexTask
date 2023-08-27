@@ -1,6 +1,40 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import "react-toastify/dist/ReactToastify.min.css";
+
+.form-group {
+  position: relative;
+}
+
+.form__field {
+  transition: border-color 0.2s;
+  outline: 0;
+  font-size: 0.875rem;
+  background-color: transparent;
+}
+
+.form__field::placeholder {
+  color: transparent;
+}
+
+.form__field:placeholder-shown ~ .form__label {
+  font-size: 0.875rem;
+  font-weight: 400;
+  cursor: text;
+  top: 19px;
+  color: white;
+}
+
+label,
+.form__field:focus ~ .form__label {
+  position: absolute;
+  top: 0;
+  font-size: 0.75rem;
+  display: block;
+  transition: 0.2s;
+  color: white;
+}
 
 .tabs {
   scrollbar-width: none;

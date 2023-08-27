@@ -10,6 +10,8 @@ import cn from "classnames";
 import { motion, useInView } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
 import { slides } from "./constants";
+import { Button } from "@/shared/ui/button";
+import { fadeIn } from "@/shared/animation";
 
 export const MyDates = () => {
   const [activeSlide, setActiveSlide] = useState(1);
@@ -113,7 +115,10 @@ export const MyDates = () => {
 
   return (
     <div className="tb:max-dk:py-[16px] mb:max-tb:py-[8px]">
-      <section ref={ref} className="container mb:mb-[10px]">
+      <section
+        ref={ref}
+        className="container mb:mb-[10px] flex items-center justify-between"
+      >
         <Typography
           variant="h2"
           className="uppercase flex w-full flex-col text-white overflow-hidden tb:max-dk:max-w-[489px] dk:max-w-[900px]"
@@ -149,6 +154,21 @@ export const MyDates = () => {
             </AnimatedTitle>
           </motion.span>
         </Typography>
+        <motion.div
+          variants={fadeIn("down", 0.4)}
+          initial="hidden"
+          animate="show"
+          exit="hidden"
+          className="flex"
+        >
+          <Button
+            href="/trick"
+            src="/dates/trick.png"
+            alt="trick"
+            linkClassName="mb:max-tb:max-w-[85px] mb:max-tb:max-h-[85px]"
+            imageClassName="mb:max-tb:max-w-[85px] mb:max-tb:max-h-[85px]"
+          />
+        </motion.div>
       </section>
 
       <motion.div

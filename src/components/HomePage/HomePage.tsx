@@ -50,7 +50,7 @@ export const HomePage = () => {
               transition={{ duration: 3.2, ease: "easeInOut" }}
             />
           </Typography>
-          <div className="flex justify-center tb:hidden relative">
+          <div className="flex justify-center tb:hidden relative z-[9]">
             <Button
               href="/history"
               src="/homePage/myHistory.png"
@@ -63,7 +63,7 @@ export const HomePage = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="hidden tb:flex"
+            className="hidden relative tb:flex z-[9]"
           >
             <Button
               href="/history"
